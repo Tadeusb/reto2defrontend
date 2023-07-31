@@ -1,0 +1,148 @@
+@use 'variables' as v;
+
+.page-one{
+   margin: 10% auto;
+   padding: 25px;
+   height: 370px;
+   width: 350px;
+   border-radius: 18px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-image: radial-gradient(circle at 50% -90%, v.$Dark-Blue-Ligh, v.$Dark-Blue);
+   box-shadow: 0px 10px 50px v.$Otro-Dark-Blue;
+   //background-color: v.$Dark-Blue;
+   &__circle-star{
+      height: 40px;
+      width: 40px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: v.$trasparem-Grey;
+      cursor: pointer;
+   }
+   &__circle-star:hover{
+      transition: background-color 0.3s;
+      background-color: v.$Medium-Grey;
+   }
+   &__title{
+      font-size: 24px;
+      font-weight: 700;
+      color: v.$White;
+   }
+   &__paragraph{
+      font-size: 15px;
+      color: v.$Medium-Grey;
+   }
+   &__number{
+      margin: 20px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__span{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: v.$Medium-Grey;
+      background-color: v.$trasparem-Grey;
+   }
+   &__span:hover{
+      cursor: pointer;
+      color: v.$White;
+      transition: background-color 0.3s;
+      background-color: v.$Medium-Grey;
+   }
+   &__span:active{
+      background-color: v.$Orange;
+   }
+   &__btn{
+      border: none;
+      height: 45px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      color: v.$White;
+      background-color: v.$Orange;
+      transition: background-color 0.3s;
+      cursor: pointer;
+   }
+   &__btn:hover{
+      background-color: v.$Orange2;
+   }
+   &__btn:active{
+      background-color: v.$White;
+      color: v.$Orange;
+   }
+   @media (min-width: 600px){
+      width: 400px;
+      padding: 32px;
+      &__title{
+         font-size: 28px;
+      }
+
+   }
+}
+.page-two{
+   margin: 10% auto;
+   height: 370px;
+   padding: 40px 25px;
+   width: 350px;
+   border-radius: 18px;
+   background-color: v.$Dark-Blue;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   background-image: radial-gradient(circle at 50% -90%, v.$Dark-Blue-Ligh, v.$Dark-Blue);
+   box-shadow: 0px 10px 50px;
+   &__p{
+      height: 30px;
+      width: 180px;
+      border-radius: 20px;
+      font-size: 15px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: v.$Orange;
+      background-color: v.$trasparem-Grey;
+   }
+   &__chosen{
+      margin: 2px;
+      width: 9px;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: v.$Font;
+      color: v.$Orange;
+      background-color: transparent;
+      border: none;
+   }
+   &__title{
+      font-size: 26px;
+      font-weight: 700;
+      color: v.$White;
+   }
+   &__pr{
+      text-align: center;
+      color: v.$Medium-Grey;
+   }
+   @media (min-width: 600px){
+      margin:10% auto;
+      width: 400px;
+      padding: 30px;
+      &__title{
+         font-size: 28px;
+      }
+   }
+   display: none;
+}

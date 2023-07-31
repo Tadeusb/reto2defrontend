@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+
+<main class="container">
+  <section class="page-one"> <!-- Rating state start -->
+    <span class="page-one__circle-star" ><img src="/images/icon-star.svg" alt="icon_star"></span>
+    <h1 class="page-one__title">How did we do?</h1>
+    <p class="page-one__paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    
+    <div class="page-one__number">
+      <span id="chosen1" class="page-one__span">1</span>
+      <span id="chosen2" class="page-one__span">2</span>
+      <span id="chosen3" class="page-one__span">3</span>
+      <span id="chosen4" class="page-one__span">4</span>
+      <span id="chosen5" class="page-one__span">5</span>
+    </div>
+    <button id="next" class="page-one__btn">S u b m i t</button>
+  </section> <!-- Rating state end -->
+  
+  <section class="page-two"> <!-- Thank you state start -->
+    <img class="page-two__img" src="/images/illustration-thank-you.svg" alt="image_illustration-thank-you">
+    <p class="page-two__p">You selected<input class="page-two__chosen" value="0"></input>out of 5</p>
+    <h1 class="page-two__title">Thank you!</h1>
+    
+    <p class="page-two__pr">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+  </section> <!-- Thank you state end -->
+  
+</main>
+
+<div class="attribution">
+  Challenge by <a class="decore" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a class="decore" href="https://youtube.com/@tadeusb6401" target="_blank">Tadeusb</a>.
+</div>
+  <script src="./main.js"></script>
+</body>
+</html>

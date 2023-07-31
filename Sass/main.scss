@@ -1,0 +1,27 @@
+@use 'variables' as v;
+@use 'initial';
+@use 'pages';
+
+.container{
+   margin: 15% auto;
+   width: 375px;
+
+   @media(min-width: 600px){
+      width: 600px;
+      margin: 80px auto;
+   }
+}
+.attribution{
+   font-size: 15px;
+   color: v.$Medium-Grey;
+}
+.decore{
+   text-decoration: none;
+}
+.decore:visited{
+   font-size: 15px;
+   color: v.$White;
+}
+.decore:hover{
+   color: v.$Orange;
+}
